@@ -1,0 +1,78 @@
+/*selectores*/
+
+h1 {
+    /*Atributos*/
+    color: rgb(0, 0, 127); /*Valores*/
+    /*colores en potencias de 2 entre 0-255 
+    2^8=255 (full color), hexadecimales*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+
+    color:#337a33d8; /*Hexadecimal 0-9 abcdef 15*16 o 2^8 
+    color picker*/
+}
+
+/*para id's*/
+#second_h1{
+    color: rgb(112, 193, 193);
+}
+.container{
+    border: 1px black solid;
+}
+/*para contenedores*/
+.container2{
+   border: 1px black solid;
+    border-left: 5px black solid;
+    /*margin: 10 px;
+    padding: 10 px;*/
+}
+.container3{
+    border: 1px black solid;
+    margin:  5px;
+    padding: 5px;
+    border-right: 5px black solid;
+}
+
+.container4{
+    border: 1px black solid;
+    margin:  5px;
+    padding: 5px;
+    border-top: 5px black solid;
+}
+
+.container5{
+    border: 1px black solid;
+    margin:  5px;
+    padding: 5px;
+    border-bottom: 5px black solid;
+}
+
+.container6{
+    border: 1px black solid;
+    border-radius: 10px;
+}
+.container7{
+    width: 300px;
+    height: 180px;
+    background-image: url("/CSS/porsche.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#Color1{
+    color:rgb(45, 154, 117);
+}
+#Color2{
+    color:rgb(255, 225, 0);
+}
+#ejfont{
+    font: bold italic large serif;
+}
+#ejfont2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#ejfont3{
+    font-style: oblique;
+    font-weight: 900;
+}
