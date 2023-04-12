@@ -76,3 +76,81 @@ h2 {
     font-style: oblique;
     font-weight: 900;
 }
+.container122{
+    height: 80px;
+    width: 170px;
+    background-color: rgb(176, 230, 185);
+}
+ul {
+    list-style: georgian;
+}
+.container14{
+    border: 0.5px black solid;
+    margin:  6px;
+    border: 0.5px black solid;
+    
+}
+.container155{
+    border: 0.5px black solid;
+    margin:  6px;
+    padding: 0px;
+    border: 0.5px black solid;
+}
+.container15{
+    border: 0.5px black solid;
+    margin:  6px;
+    padding: 20px;
+    border: 0.5px black solid;
+}
+.container166{
+
+        width: 200px;
+        height: 65px;
+        background-color: rgba(208, 219, 84, 0.897);
+}
+.container16{
+    width: 200px;
+        height: 65px;
+    background-color: rgba(208, 219, 84, 0.897);
+    overflow: auto;
+}
+
+section2{
+     width: 100%;
+    border-spacing: 5px;
+}
+article2{
+    display: table-cell;
+    padding: 12px;
+    background: #9ad6fb;
+    width: 33.33333%; 
+    border: 4px solid rgba(76, 184, 238, 0.743);
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  .box {
+    display: inline-block;
+    width: 90px;
+    height: 75px;
+    background: rgb(79, 176, 168);
+    color: white;
+  }
+  
+  #two {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    background: rgb(47, 182, 144);
+  }
+  .container21{
+    width: 200px;
+    height: 180px;
+    background-image: url("/CSS/LSTW.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: saturate(280%);
+    
+}
