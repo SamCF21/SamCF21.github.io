@@ -112,10 +112,11 @@ function mcd(x, y){
     return x; //devuelve el valor de x 
 }
 
-const nums = (48, 18)
-console.log(mcd(nums)) // respuesta: 6
+console.log(mcd(100, 75)) // respuesta: 25
 
-//console.log("6. Ejercicio: función que reciba un número, y regrese una lista con todos sus factores. Por ejemplo: factoriza(12) -> [1, 2, 3, 4, 6, 12]");
+console.log("6. Ejercicio: función que cambie una cadena de texto a 'Hacker Speak'. Por ejemplo, para la cadena 'Javascript es divertido', su hacker speak es: 'J4v45c1pt 35 d1v3rt1d0'.");
+
+
 
 //console.log("7. Ejercicio: función que quite los elementos duplicados de un arreglo y regrese una lista con los elementos que quedan");
 
