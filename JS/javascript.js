@@ -116,7 +116,23 @@ console.log(mcd(100, 75)) // respuesta: 25
 
 console.log("6. Ejercicio: función que cambie una cadena de texto a 'Hacker Speak'. Por ejemplo, para la cadena 'Javascript es divertido', su hacker speak es: 'J4v45c1pt 35 d1v3rt1d0'.");
 
-
+function hack(str) {
+  const hacker = {
+    a: "4",
+    e: "3",
+    i: "1",
+    o: "0",
+    s: "5"
+  }; // definir 
+  let newStr = '';
+    for (let i = 0; i < str.length; i++) {
+        if (hacker[str[i].toLowerCase()]) {
+            newStr += hacker[str[i].toLowerCase()];
+        } else {
+            newStr += str[i];
+        }
+    }
+}
 
 //console.log("7. Ejercicio: función que quite los elementos duplicados de un arreglo y regrese una lista con los elementos que quedan");
 
