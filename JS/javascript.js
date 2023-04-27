@@ -32,7 +32,7 @@ function sinrep(str) {
   
   const str = 'abacddbec';
   const carsinrep = sinrep(str);
-  
+  console.log("string usado: abacddbec");
   console.log(carsinrep); // respuesta: 'e'
   
 console.log("2. Ejercicio: función que implemente el algoritmo 'bubble-sort' para ordenar una lista de números.")
@@ -55,6 +55,8 @@ function bubble_sort(arr) {
   }
   
   const arry = [28, 388, 7, 8, 9, 100];
+  console.log("lista usada: [28, 388, 7, 8, 9, 100]");
+  console.log("bubble sort");
   console.log(bubble_sort(arry)); // respuesta: [7, 8, 9, 28, 100, 388]
 
 console.log("3. Ejercicio: dos funciones: la primera que invierta un arreglo de números y regrese un nuevo arreglo con el resultado; la segunda que modifique el mismo arreglo que se pasa como argumento.");
@@ -68,11 +70,12 @@ function invertir_array(arr) {
     return invaarr; // regresa el arreglo invertido
   }
   const ar = [1, 2, 3];
+  console.log("lista usada: [1, 2, 3]");
   console.log(invertir_array(ar)) // respuesta: [3, 2, 1]
   
 function invertir_array2(arr) {
     const divisionsindec = (arr.length - 1) / 2; //nos ayuda para no tener decimales y llegar a la mitad del arreglo
-    //recorre el arreglo a la mitad
+    //recorre el arreglo a la mitad para cambiar el elemento solo y modificarlo
     for (let i = 0; i < divisionsindec; i++) {
       let temp = arr[i]; // cambia de posicion los elementos
       arr[i] = arr[arr.length - 1 - i];
@@ -81,6 +84,7 @@ function invertir_array2(arr) {
     return arr;
   }
   const arrr = [1, 2, 3];
+  console.log("lista usada: [1, 2, 3]");
   console.log(invertir_array2(arrr)) 
 
 console.log("4. Ejercicio: función que reciba una cadena de texto y regrese una nueva con la primer letra de cada palabra en mayúscula.");
@@ -97,7 +101,9 @@ function mayus(str) {
     str = str.join("");//se convierte el arreglo en string otra vez
     return str; // regresa string con mayusculas en las primeras letras de cada palabra
   }
+
 const st= "sam covarrubias";
+console.log("string usado: sam covarrubias");
 console.log(mayus(st)) // respuesta: Sam Covarrubias
 
 console.log("5. Ejercicio: función que calcule el máximo común divisor de dos números.");
@@ -111,7 +117,8 @@ function mcd(x, y){
     }
     return x; //devuelve el valor de x 
 }
-
+console.log("mcd de 100 y 75");
+console.log("mcd:");
 console.log(mcd(100, 75)) // respuesta: 25
 
 console.log("6. Ejercicio: función que cambie una cadena de texto a 'Hacker Speak'.");
@@ -138,6 +145,7 @@ function hack(str) {
     }
     return s;
 }
+console.log("Cambia el texto de: Javascript es divertido");
 console.log(hack('Javascript es divertido')); // respuesta: J4v45cr1pt 35 d1v3rt1d0
 
 console.log("7. Ejercicio: función que reciba un número, y regrese una lista con todos sus factores.")
@@ -151,6 +159,7 @@ function factoriza(x){
     }
     return lista;
 }
+console.log("Factoriza el numero 12");
 console.log(factoriza(12)) // respuesta: [1, 2, 3, 4, 6, 12]
 
 console.log("8. Ejercicio: función que quite los elementos duplicados de un arreglo y regrese una lista con los elementos que quedan");
@@ -165,6 +174,8 @@ function eldup(arr){
     }
     return array;
 }
+console.log("lista: [1,0,1,1,0,0]");
+console.log("elimina el duplicado");
 console.log(eldup([1,0,1,1,0,0])); // respuesta: [1, 0]
 
 console.log("9. Ejercicio: función que reciba como parámetro una lista de cadenas de texto, y regrese la longitud de la cadena más corta.")
@@ -182,6 +193,8 @@ function shortstr(str){
     return short;
 }
 let lista_s= ["Sam", "Covarrubias", "Figueroa"];
+console.log("lista usada: [Sam, Covarrubias, Figueroa]")
+console.log("longitud");
 console.log(shortstr(lista_s)); //respuesta: 3, la longitude de la cadena más corta.
 
 console.log("10. Ejercicio: función que revise si una cadena de texto es un palíndromo o no.");
@@ -196,6 +209,7 @@ function pal(str){
   }
   return "Si es palíndromo";
 }
+console.log("palabras usadas en este orden: oso, reconocer, programacion")
 console.log(pal('oso')); // respuesta: si es palindromo
 console.log(pal('reconocer')); // respuesta: si es palindromo
 console.log(pal('programacion')); // respuesta: No es palindromo 
@@ -207,6 +221,8 @@ function alphabeticlist(arr){
   return newarr;
 
 }
+console.log("lista: [Sam, Mau, Cris, Vale, Fer]")
+console.log("ordenada alfabéticamente:")
 console.log(alphabeticlist(["Sam", "Mau", "Cris", "Vale", "Fer"])) // respuesta: ['Cris', 'Fer', 'Mau', 'Sam', 'Vale']
 
 console.log("12. Ejercicio: función que tome una lista de números y devuelva la mediana y la moda");
@@ -254,6 +270,7 @@ function opestadisticas(lista) {
   };
 }
 let l= [70, 88, 70, 95, 100];
+console.log("lista: [70, 88, 70, 95, 100]")
 console.log(opestadisticas(l)); // respuesta: media=84.6, mediana= 70, moda= 70;
 
 console.log("13. Ejercicio: función que tome una lista de cadenas de texto y devuelva la cadena más frecuente.");
@@ -282,6 +299,8 @@ function freqstr(lista) {
   return cadenaMasFrecuente; // retorna la cadena más frecuente
 }
 let strf= ["Sam", "Isa", "Mayus", "Elefi", "Zorr", "Mayus"];
+console.log("lista: [Sam, Isa, Mayus, Elefi, Zorr, Mayus] ")
+console.log("frecuencia:")
 console.log(freqstr(strf)) //respuesta: Mayus
 
 console.log("14. Ejercicio: función que tome un número y devuelva verdadero si es una potencia de dos, falso de lo contrario.");
@@ -304,7 +323,9 @@ function powerof2(x) {
   return true; // si el número es igual a 1 al final, es potencia de dos
 }
 
+console.log("primer numero: 4")
 console.log(powerof2(4)); // respuesta: true
+console.log("segundo numero: 25")
 console.log(powerof2(25)); // respuesta: false
 
 console.log("15. Ejercicio: función que tome una lista de números y devuelva una nueva lista con todos los números en orden descendente.");
@@ -318,4 +339,6 @@ function descendiente(arr)
   return arr;
   }
   let listaa=[70, 85, 100, 90]
+console.log("lista proporcionada=[70, 85, 100, 90]")
+console.log("lista ordenada")
 console.log(descendiente(listaa)); // respuesta: [100, 90, 85, 70]
